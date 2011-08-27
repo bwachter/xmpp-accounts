@@ -1,0 +1,6 @@
+Makefile
+debian/stamp-*
+debian/tmp/
+debian/xmpp-accounts/
+debian/files
+debian/xmpp-accounts.substvars
