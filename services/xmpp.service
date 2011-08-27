@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<service id="jabber">
+  <type>IM</type>
+  <provider>jabber</provider>
+  <name>Jabber</name>
+  <icon>icon-m-common-ocs</icon>
+  <template>
+    <setting name="manager"        type="s">gabble</setting>
+    <setting name="protocol"       type="s">jabber</setting>
+
+    <parameters>
+        <setting name="server"/>
+        <setting name="account"/>
+        <setting name="ignore-ssl-errors" type="b">true</setting>
+        <setting name="password">
+    </parameters>
+  </template>
+
+  <ui>
+    <layout type="2column">
+      <widget key="parameters/account"          type="string"   label="Jabber account"                 />
+      <widget key="parameters/server"         type="string"   label="Jabber server"                 />
+      <widget key="parameters/password"      type="password"   label="Jabber password"                 />
+      <widget key="parameters/ignore-ssl-errors" type="checkbox" label="SIP account URL"                 />
+      <widget key="parameters/krb5"           type="checkbox" label="Enable Kerberos"                 />
+      <widget key="parameters/sso"            type="checkbox" label="Enable Single-Sign-On"           />
+    </layout>
+  </ui>
+</service>
