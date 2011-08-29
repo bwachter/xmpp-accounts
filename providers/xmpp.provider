@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <provider version="1.0" id="jabber">
-    <name>XMPP</name>
-    <description>Generic XMPP account</description>
-    <icon>icon-m-common-ocs</icon>
-    <account-setup>
-        <setting name="store_password_in_accounts" type="boolean" default_value="true"/>
-    </account-setup>
+  <name>XMPP</name>
+  <description>Generic XMPP account</description>
+  <icon>icon-m-common-xmpp</icon>
+  <account-setup>
+    <setting name="remember" type="b"/>
+    <setting name="store_password_in_accounts" type="b" default_value="true"/>
+    <setting name="username" type="s" is_displayname="true" />
+    <setting name="password" type="p"/>
+  </account-setup>
 </provider>
