@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<service id="jabber">
+<service id="xmpp">
   <type>IM</type>
-  <provider>jabber</provider>
-  <name>Jabber</name>
+  <provider>xmpp</provider>
+  <name>XMPP</name>
   <icon>icon-m-common-xmpp</icon>
   <template>
     <setting name="manager"        type="s">gabble</setting>
     <setting name="protocol"       type="s">jabber</setting>
-
-    <parameters>
-        <setting name="server"/>
-        <setting name="account"/>
-        <setting name="ignore-ssl-errors" type="b">true</setting>
-        <setting name="password">
-    </parameters>
   </template>
+
+  <type-data>
+    <service-presences-list>
+      <i18n-domain>rtcom-libpresence</i18n-domain>
+
+      <presence id="available" type="Available" >
+        <presence-icon size="small">icon-s-common-presence-online</presence-icon>
+        <presence-icon size="medium">icon-m-common-presence-online</presence-icon>
+        <i18n-name>qtn_comm_presence_online</i18n-name>
+      </presence>
+      <presence id="offline" type="Offline">
+        <presence-icon size="small">icon-s-common-presence-offline</presence-icon>
+        <presence-icon size="medium">icon-m-common-presence-offline</presence-icon>
+        <i18n-name>qtn_comm_presence_offline</i18n-name>
+      </presence>
+
+    </service-presences-list>
+  </type-data>
+
 </service>
