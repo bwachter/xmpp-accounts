@@ -23,7 +23,21 @@
         <presence-icon size="medium">icon-m-common-presence-offline</presence-icon>
         <i18n-name>qtn_comm_presence_offline</i18n-name>
       </presence>
-
+      <presence id="away" type="Away">
+        <presence-icon size="small">icon-s-common-presence-away</presence-icon>
+        <presence-icon size="medium">icon-m-common-presence-away</presence-icon>
+        <i18n-name>qtn_comm_presence_away</i18n-name>
+      </presence>
+      <presence id="busy" type="Busy">
+        <presence-icon size="small">icon-s-common-presence-busy</presence-icon>
+        <presence-icon size="medium">icon-m-common-presence-busy</presence-icon>
+        <i18n-name>qtn_comm_presence_busy</i18n-name>
+      </presence>
+      <presence id="invisible" type="Hidden">
+        <presence-icon size="small">icon-s-common-presence-unknown</presence-icon>
+        <presence-icon size="medium">icon-m-common-presence-unknown</presence-icon>
+        <i18n-name>qtn_comm_presence_invisible</i18n-name>
+      </presence>      
     </service-presences-list>
   </type-data>
 
