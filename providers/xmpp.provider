@@ -8,5 +8,11 @@
     <setting name="store_password_in_accounts" type="b" default_value="true"/>
     <setting name="username" type="s" is_displayname="true" />
     <setting name="password" type="p"/>
+    <authsession>
+      <validate method="password" mechanism="ClientLogin"/>
+      <method name="password">
+        <mechanism name="ClientLogin"/>
+      </method>
+    </authsession>
   </account-setup>
 </provider>
