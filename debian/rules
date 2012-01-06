@@ -5,3 +5,6 @@ include /usr/share/cdbs/1/class/qmake.mk
 
 DEB_DESTDIR := $(CURDIR)/debian/tmp
 DEB_DH_INSTALL_SOURCEDIR := debian/tmp
+
+binary/xmpp-accounts::
+	aegis-deb-add -control debian/xmpp-accounts/DEBIAN/control .. debian/xmpp-accounts.aegis=_aegis

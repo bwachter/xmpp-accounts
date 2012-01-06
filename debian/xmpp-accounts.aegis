@@ -1,0 +1,7 @@
+<aegis>
+  <request>
+    <credential name="UID::user"/>
+    <credential name="GRP::users" />
+    <for path="/usr/share/xmpp-accounts/refresh-themedaemon.sh"/>
+  </request>
+</aegis>

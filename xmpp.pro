@@ -9,4 +9,7 @@ services.files += services/*
 icons.path = /usr/share/themes/base/meegotouch/icons
 icons.files = icons/*
 
-INSTALLS += providers services icons
+share.path = /usr/share/xmpp-accounts/
+share.files = share/*
+
+INSTALLS += providers services icons share

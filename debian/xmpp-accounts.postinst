@@ -1,0 +1,4 @@
+#!/bin/sh
+
+aegis-exec -lsu user "/usr/share/xmpp-accounts/refresh-themedaemon.sh"
+

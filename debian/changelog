@@ -1,3 +1,9 @@
+xmpp-accounts (0.2) harmattan; urgency=low
+
+  * Add aegis files
+ 
+ -- Bernd Wachter <bwachter@lart.info>  Fri, 06 Jan 2012 01:49:57 +0200
+
 xmpp-accounts (0.1) harmattan; urgency=low
 
   * Test version to play with accounts on device
