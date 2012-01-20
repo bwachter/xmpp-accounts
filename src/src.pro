@@ -27,7 +27,8 @@ SOURCES = xmppplugin.cpp \
           xmppaccountedit.cpp 
 
 RESOURCES += qml.qrc
-OTHER_FILES += resources/qml/xmpp-settings.qml
+OTHER_FILES += resources/qml/xmpp-settings.qml \
+               resources/qml/LabeledSwitch.qml
 
 target.path = $$system(pkg-config --variable=providerplugindir AccountPlugin)/bin
 INSTALLS += target

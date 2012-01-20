@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file alias="qml/xmpp-settings.qml">resources/qml/xmpp-settings.qml</file>
+        <file alias="qml/LabeledSwitch.qml">resources/qml/LabeledSwitch.qml</file>
     </qresource>
 </RCC>
