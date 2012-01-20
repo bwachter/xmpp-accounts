@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 5.0.0), aegis-builder (>= 1.4)
 Standards-Version: 3.6.0
 
 Package: xmpp-accounts
-Architecture: all
+Architecture: any
 Section: user/network
 Depends: account-plugin-sip
 Description: XMPP (Jabber) accounts plugin for Harmattan.
