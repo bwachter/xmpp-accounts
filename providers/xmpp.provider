@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <provider version="1.0" id="xmpp">
   <name>XMPP</name>
-  <description>Generic XMPP account</description>
+  <description>Generic XMPP(Jabber) account</description>
   <icon>icon-m-common-xmpp</icon>
   <account-setup>
     <setting name="remember" type="b"/>
