@@ -3,7 +3,8 @@ TARGET = xmppplugin
 
 CONFIG += qt link_pkgconfig warn_on \
           qdeclarative-boostable \
-          meegotouch 
+          qt-boostable \
+          meegotouch-boostable 
 #CONFIG += debug
 
 CONFIG(debug){
