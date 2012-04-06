@@ -72,8 +72,6 @@ void XmppAccountEdit::createContent(){
 #endif
     view->setSource(QUrl("qrc:/qml/xmpp-settings.qml"));
 
-  AccountSettingsPage::setWidget(widget);
-
   setValueAsString("parameters/resource", "aardphone");
 }
 
@@ -97,6 +95,7 @@ void XmppAccountEdit::qmlStatusChanged(QDeclarativeView::Status status){
     case QDeclarativeView::Ready: {
       qmlWidget = qobject_cast<QGraphicsObject*>(view->rootObject());
       qmlWidget->setParentItem(widget);
+      AccountSettingsPage::setWidget(widget);
       QObject *item=dynamic_cast<QObject*>(view->rootObject());
       connect(item, SIGNAL(setValueAsInt(QString, int)), this, SLOT(setValueAsInt(QString, int)));
       connect(item, SIGNAL(setValueAsBool(QString, bool)), this, SLOT(setValueAsBool(QString, bool)));
