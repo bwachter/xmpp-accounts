@@ -2,6 +2,12 @@
   <request>
     <credential name="UID::user"/>
     <credential name="GRP::users" />
+    <for path="/usr/lib/AccountSetup/bin/xmppplugin" />
+    <for path="/usr/lib/AccountSetup/xmppplugin" />
+  </request>
+  <request>
+    <credential name="UID::user"/>
+    <credential name="GRP::users" />
     <for path="/usr/share/xmpp-accounts/refresh-themedaemon.sh"/>
   </request>
 </aegis>
